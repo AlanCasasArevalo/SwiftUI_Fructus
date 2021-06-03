@@ -30,11 +30,12 @@ struct FruitsCardView: View {
                     .frame(maxWidth: 480)
                 
                 // Button
-
+                StartButtonView()
             } // VStack
         } // ZStack
         .frame(minWidth: 0, maxWidth: .infinity, minHeight: 0, maxHeight: .infinity, alignment: .center)
         .background(LinearGradient(gradient: Gradient(colors: [Color("blueberryDark"), Color.blue]), startPoint: .top, endPoint: .bottom))
+        .cornerRadius(20)
         
     }
 }
