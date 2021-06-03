@@ -9,7 +9,7 @@ struct FructusApp: App {
             if isOnBoarding {
                 OnBoardingView()
             } else {
-                ContentView()
+                ContentView(fruits: fruitData)
             }
         }
     }

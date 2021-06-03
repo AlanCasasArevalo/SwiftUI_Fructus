@@ -17,6 +17,7 @@
 		51E5869B266940E4005B8815 /* OnBoardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51E5869A266940E4005B8815 /* OnBoardingView.swift */; };
 		51E5869F2669436E005B8815 /* Fruit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51E5869E2669436E005B8815 /* Fruit.swift */; };
 		51E586A426694438005B8815 /* FruitData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51E586A326694438005B8815 /* FruitData.swift */; };
+		51E586A926694AF2005B8815 /* FruitRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51E586A826694AF2005B8815 /* FruitRowView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,7 @@
 		51E5869A266940E4005B8815 /* OnBoardingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnBoardingView.swift; sourceTree = "<group>"; };
 		51E5869E2669436E005B8815 /* Fruit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fruit.swift; sourceTree = "<group>"; };
 		51E586A326694438005B8815 /* FruitData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FruitData.swift; sourceTree = "<group>"; };
+		51E586A826694AF2005B8815 /* FruitRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FruitRowView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +101,7 @@
 				51E5868F2669133E005B8815 /* FruitsCardView.swift */,
 				51E5869726693E5D005B8815 /* StartButtonView.swift */,
 				51E5869A266940E4005B8815 /* OnBoardingView.swift */,
+				51E586A826694AF2005B8815 /* FruitRowView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -198,6 +201,7 @@
 			files = (
 				51E586902669133E005B8815 /* FruitsCardView.swift in Sources */,
 				51E5869F2669436E005B8815 /* Fruit.swift in Sources */,
+				51E586A926694AF2005B8815 /* FruitRowView.swift in Sources */,
 				51E5867F266911C5005B8815 /* ContentView.swift in Sources */,
 				51E5867D266911C5005B8815 /* FructusApp.swift in Sources */,
 				51E5869B266940E4005B8815 /* OnBoardingView.swift in Sources */,

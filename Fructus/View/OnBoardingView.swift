@@ -6,7 +6,7 @@ struct OnBoardingView: View {
     
     var body: some View {
         TabView {
-            ForEach (fruits) { fruit in
+            ForEach (fruits[0...5]) { fruit in
                 FruitsCardView(fruit: fruit)
             }
         }
