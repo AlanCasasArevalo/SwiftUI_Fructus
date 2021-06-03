@@ -1,10 +1,3 @@
-//
-//  FruitRowView.swift
-//  Fructus
-//
-//  Created by Alan Casas on 03/06/2021.
-//
-
 import SwiftUI
 
 struct FruitRowView: View {
@@ -34,10 +27,6 @@ struct FruitRowView: View {
                     .foregroundColor(Color.secondary)
                 
             }
-
-            Image(systemName: "chevron.right")
-                .foregroundColor(Color.gray)
-
         }
     }
 }

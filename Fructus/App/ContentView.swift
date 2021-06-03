@@ -10,8 +10,12 @@ struct ContentView: View {
             List {
                 // shuffled es un metodo que te da el array de items de manera desordenada
                 ForEach (fruits.shuffled()) { fruit in
-                    FruitRowView(fruit: fruit)
-                        .padding(.vertical, 4)
+                    NavigationLink(
+                        destination: FruitDetailView(fruit: fruit),
+                        label: {
+                            FruitRowView(fruit: fruit)
+                                .padding(.vertical, 4)
+                        })
                 }
             }
             .navigationTitle("Fruits")
