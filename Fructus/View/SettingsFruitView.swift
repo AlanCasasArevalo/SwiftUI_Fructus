@@ -52,6 +52,8 @@ struct SettingsFruitView: View {
                             
                                 Toggle(isOn: $isOnBoarding) {
                                     Text("Restart".uppercased())
+                                        .fontWeight(.bold)
+                                        .foregroundColor(isOnBoarding ? .green : .accentColor)
                                 }
                                 .padding()
                                 .background(
