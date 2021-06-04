@@ -3,7 +3,8 @@ import SwiftUI
 struct SettingsFruitView: View {
     
     @Environment(\.presentationMode) var presentationMode
-    
+    @AppStorage(Constants.AppStorageKeys.isOnBoarding) var isOnBoarding: Bool = false
+
     var body: some View {
         NavigationView {
             ScrollView(.vertical, showsIndicators: false) {
@@ -34,6 +35,30 @@ struct SettingsFruitView: View {
                         SettingRowView(name: "Designer", content: "Augue Iriure")
                         SettingRowView(name: "Website", linkLabel: "Google", linkDestination: "www.google.com/")
                         SettingRowView(name: "Linkedin", linkLabel: "Linkedin", linkDestination: "www.linkedin.com")
+                    }
+
+                    GroupBox(
+                        label: SettingsFruitLabelView(title: "Customization", icon: "paintbrush")
+                    ) {
+                        Divider()
+                            .padding(.vertical, 4)
+                        VStack {
+                            Text("Lorem salutandi eu mea, eam in soleat iriure assentior. Tamquam lobortis id qui. Ea sanctus democritum mei, per eu alterum electram adversarium. Ea vix probo dicta iuvaret, posse epicurei suavitate eam an, nam et vidit menandri. Ut his accusata petentium.")
+                                .padding(.vertical, 8)
+                                .frame(minHeight: 60)
+                                .layoutPriority(1)
+                                .font(.footnote)
+                                .multilineTextAlignment(.leading)
+                            
+                                Toggle(isOn: $isOnBoarding) {
+                                    Text("Restart".uppercased())
+                                }
+                                .padding()
+                                .background(
+                                    Color(UIColor.tertiarySystemBackground)
+                                        .clipShape(RoundedRectangle(cornerRadius: 8, style: .continuous))
+                                )
+                        }
                     }
                     
                 }
