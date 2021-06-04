@@ -26,6 +26,16 @@ struct SettingsFruitView: View {
                         }
                     }
                     
+                    GroupBox(
+                        label:
+                            SettingsFruitLabelView(title: "Application", icon: "apps.iphone")
+                    ) {
+                        SettingRowView(name: "Developer", content: "Augue Iriure")
+                        SettingRowView(name: "Designer", content: "Augue Iriure")
+                        SettingRowView(name: "Website", linkLabel: "Google", linkDestination: "www.google.com/")
+                        SettingRowView(name: "Linkedin", linkLabel: "Linkedin", linkDestination: "www.linkedin.com")
+                    }
+                    
                 }
                 .navigationTitle(Text("Settings"))
                 .navigationBarTitleDisplayMode(.large)
@@ -43,5 +53,6 @@ struct SettingsFruitView: View {
 struct SettingsFruitView_Previews: PreviewProvider {
     static var previews: some View {
         SettingsFruitView()
+            .preferredColorScheme(.dark)
     }
 }
