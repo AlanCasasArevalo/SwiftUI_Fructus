@@ -2,6 +2,7 @@ import SwiftUI
 
 struct ContentView: View {
     
+    @State var isShowingSettings: Bool = false
     var fruits: [Fruit]
     
     var body: some View {
@@ -19,6 +20,19 @@ struct ContentView: View {
                 }
             }
             .navigationTitle("Fruits")
+            .navigationBarItems(trailing:
+                                    Button(action: {
+                                        isShowingSettings.toggle()
+                                    }, label: {
+                                        Image(systemName: "slider.horizontal.3")
+                                            .font(.title)
+                                            .foregroundColor(Color.secondary)
+                                        
+                                    })
+                                    .sheet(isPresented: $isShowingSettings, content: {
+                                        SettingsFruitView()
+                                    })
+            )
         }
         
     }

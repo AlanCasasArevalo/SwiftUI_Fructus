@@ -1,10 +1,3 @@
-//
-//  SourceLinkView.swift
-//  Fructus
-//
-//  Created by Alan Casas on 03/06/2021.
-//
-
 import SwiftUI
 
 struct SourceLinkView: View {

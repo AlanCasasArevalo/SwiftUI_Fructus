@@ -1,10 +1,3 @@
-//
-//  FruitNutrientsView.swift
-//  Fructus
-//
-//  Created by Alan Casas on 04/06/2021.
-//
-
 import SwiftUI
 
 struct FruitNutrientsView: View {
@@ -42,6 +35,7 @@ struct FruitNutrientsView: View {
         GroupBox {
             DisclosureGroup("Nutritional value per 100g") {
                 ForEach(0..<fruit.nutrition.count, id: \.self) { index in
+                    Divider()
                     FruitNutrientRowView(foregroundColor: fruit.gradientColors.first ?? .black, nutrientTitle: nutrients[index], nutrientValue: fruit.nutrition[index])
                         .padding(.vertical, 8)
                 }
