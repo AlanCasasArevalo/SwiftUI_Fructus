@@ -14,6 +14,8 @@ struct FruitNutrientsView: View {
     let nutrients = ["Energy", "Sugar", "Fat", "Proteins", "Vitamins", "Minterals"]
 
     var body: some View {
+        // Manera 1 de hacerlo
+        /*
         GroupBox {
             VStack (alignment: .leading) {
                 HStack {
@@ -36,6 +38,16 @@ struct FruitNutrientsView: View {
         .onTapGesture {
             shouldExpandMenu.toggle()
         }
+         */
+        GroupBox {
+            DisclosureGroup("Nutritional value per 100g") {
+                ForEach(0..<fruit.nutrition.count, id: \.self) { index in
+                    FruitNutrientRowView(foregroundColor: fruit.gradientColors.first ?? .black, nutrientTitle: nutrients[index], nutrientValue: fruit.nutrition[index])
+                        .padding(.vertical, 8)
+                }
+            }
+        }
+        
     }
 }
 
